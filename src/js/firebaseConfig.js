@@ -23,7 +23,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // ATENÇÃO: Apenas para testes em localhost! Remova ou comente esta linha em produção.
-self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+// self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
 const appCheck = initializeAppCheck(app, {
   provider: new ReCaptchaV3Provider('6Lc6-GkrAAAAAGIfNcnHb2dxqN3qJ-oraloNmOLN'),
   isTokenAutoRefreshEnabled: true
