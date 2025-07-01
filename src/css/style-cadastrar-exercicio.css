@@ -1,0 +1,68 @@
+h1 {
+    color: white;
+    margin-bottom: 5px;
+    width: 80vw;
+    max-width: 700px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 80vw;
+    max-height: 700px;
+    max-width: 700px;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    align-self: flex-start;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 2px 0px 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;;
+    min-height: 70px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.899);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "basic-website",
+  "version": "1.0.0",
+  "description": "A basic website with a header and navigation links.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "website",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "firebase": "^11.9.1"
+  }
+}

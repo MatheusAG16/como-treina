@@ -1,0 +1,173 @@
+section.all__exercicios {
+    width: 70vw;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+section.exercicios__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.exercicios__header label {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+section.exercicios__header select {
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+section.exercicios__header select:hover {
+    background-color: #e2e2e2;
+    color: #000;
+    cursor: pointer;
+}
+
+section.exercicios__header button {
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+    background-color: #3cff22;
+    border-radius: 10px;
+    border: none;
+}
+
+section.exercicios__header button:hover {
+    background-color: #2aa01d;
+    color: #000;
+    cursor: pointer;
+}
+
+.indisponivel {
+    background-color: rgb(65, 65, 65) !important;
+    color: rgb(190, 190, 190);
+    pointer-events: none;
+}
+
+section.exercicios__header form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.exercicios__header form input {
+    width: 40%;
+    height: 50px;
+}
+
+main {
+    min-height: calc(100vh - 110.8px);
+    min-height: calc(100dvh - 110.8px);
+}
+
+section div.exercicio {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section div.exercicio img{
+    width: 100%;
+    max-width: 1000px;
+    max-height: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+div.sugestao-video-exercicio {
+    width: 100%;
+    height: 530px;
+}
+
+iframe.video-exercicio{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+ol li.passo {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section.exercicios__list {
+    width: 100%;
+}
+
+section.exercicios__list li.exercicio__item {
+    width: 100%;
+    max-height: 200px;
+    overflow: auto;
+    padding: 5px;
+    margin: 2px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 5px;
+}
+
+.exercicio__item label {
+    padding: 5px;
+}
+
+button.gerarTreino {
+    align-self: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #3cff22;
+    border-radius: 10px;
+    border: none;
+}
+
+button.gerarTreino:hover {
+    background-color: #2aa01d;
+    color: #000;
+    cursor: pointer;
+}
+
+/*Parte dos treinos salvos*/
+
+section.exercicios__treino{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+div.treino__salvo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    aspect-ratio: 1;
+    background-color: #000;
+    color: white;
+    font-size: 2.5em;
+}
+
+div.treino__salvo:hover {
+    background-color: #3cff22;
+    color: #000;
+    cursor: pointer;
+}

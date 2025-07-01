@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-exercicios.css">
+    <link rel="shortcut icon" href="images/logo-cm.png" type="image/x-icon">
+    <script type="module" src="js/pageExercicio.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="div__logo">
+                <img src="images/logo-cm.png" alt="">
+            </div>
+            <ul class="nav__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exercicios.html">Exercícios</a></li>
+                <li><a href="meuTreino.html">Meu Treino</a></li>
+                <li id="btn-login"><a href="login.html">Login</a></li>
+                <li id="btn-register"><a href="register.html">Criar Conta</a></li>
+                <li id="btn-logout" class="hidden"><a>Logout</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <h1>Selecione seus Exercicios</h1>
+
+        <!-- Adicione o conteúdo dos exercícios aqui -->
+        <section class="all__exercicios">
+
+            <section class="exercicios__header" id="exercicios-header">
+                <label for="muscle-group">Selecione o grupo muscular:</label>
+                <select id="muscle-group" name="muscle-group">
+                    <option value="all">Todos os Exercícios</option>
+                    <option value="chest">Peito</option>
+                    <option value="back">Costas</option>
+                    <option value="legs">Pernas</option>
+                    <option value="arms">Braços</option>
+                    <option value="shoulders">Ombros</option>
+                    <option value="core">Core</option>
+                </select>
+                <button id="btn-buscar-exercicios">Buscar Exercícios</button>
+            </section>
+
+            <section class="exercicios__list" id="exercicios-list">
+                <!-- <ol>
+                    <li class="exercicio__item">
+                        <input type="checkbox" id="exercicio1" name="exercicios_selecionados" value="supino_reto">
+                        <label for="exercicio1">Supino Reto</label>
+                    </li>
+                    <li class="exercicio-item">
+                        <input type="checkbox" id="exercicio2" name="exercicios_selecionados" value="supino_inclinado">
+                        <label for="exercicio2">Supino Inclinado</label>
+                    </li>
+                </ol> -->
+            </section>
+
+            <section class="exercicios__treino" id="exercicios-treino">
+
+            </section> 
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__div">
+            <p>Como Treina &copy;</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

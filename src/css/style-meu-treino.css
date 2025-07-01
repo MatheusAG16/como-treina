@@ -1,0 +1,21 @@
+.meus-treinos .exercicios__treino {
+    overflow-y: auto;
+    max-height: 450px;
+}
+
+.meus-treinos .exercicios__treino ul {
+    max-width: 400px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.list-group-item p {
+    width: 40%;
+}

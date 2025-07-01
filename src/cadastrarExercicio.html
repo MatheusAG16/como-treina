@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Exercicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-cadastrar-exercicio.css">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="div__logo">
+                <img src="images/logo-cm.png" alt="">
+            </div>
+            <ul class="nav__list">
+                <li><a href="#">Home</a></li>
+                <li><a href="exercicios.html" target="_blank">Exercícios</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Criar Conta</a></li>
+                <script src="js/cadastrarExercicio.js" defer></script>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastrar Exercícios</h1>
+        <form action="/cadastrar-exercicio" method="POST">
+            <label for="title">Nome do Exercicio:</label>
+            <input type="text" name="title" id="title" required placeholder="Digite o nome do exercício">
+
+            <label for="category">Categoria do Exercício:</label>
+            <select id="category" name="category" required>
+                    <option value="chest">Peito</option>
+                    <option value="back">Costas</option>
+                    <option value="legs">Pernas</option>
+                    <option value="arms">Braços</option>
+                    <option value="shoulders">Ombros</option>
+                    <option value="core">Core</option>
+            </select>
+
+            <label for="image">Link da Imagem do Exercício:</label>
+            <input type="text" name="img" id="img" required placeholder="Cole o link da imagem do exercício">
+
+            <label for="video">Link do Vídeo: </label>
+            <input type="url" name="video" id="video" required placeholder="Cole o link do vídeo do exercício">
+
+            <label for="howTo">Descrição do Exercício:</label>
+            <textarea name="howTo" id="howTo" required placeholder="Digite a descrição do exercício"></textarea>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="footer__div">
+            <p>Como malha &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
