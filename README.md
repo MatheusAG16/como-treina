@@ -113,4 +113,4 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 Feito com ❤️ por **Matheus de Andrade Germano**
 
 - GitHub: [@MatheusAG16](https://github.com/MatheusAG16)
-- LinkedIn: [/in/seu-linkedin](https://www.linkedin.com/in/matheus-germano-217070203/)
+- LinkedIn: [Matheus Germano](https://www.linkedin.com/in/matheus-germano-217070203/)
