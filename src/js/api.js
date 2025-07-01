@@ -1,7 +1,7 @@
 // Função para buscar os exercícios do servidor
 export async function fetchExercicio() {
         try {
-            const response = await fetch('../../buscarExercicio');
+            const response = await fetch('./data/exercicios.json');
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
