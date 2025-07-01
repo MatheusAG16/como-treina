@@ -1,6 +1,6 @@
 # Como Treina: Seu Guia de Treinos Personalizado
 
-![ComoTreina Screenshot](https://i.imgur.com/8QjP2yW.png) <p align="center">
+![ComoTreina Screenshot](https://i.imgur.com/tOPdJpS.png) <p align="center">
   Um guia interativo de exercícios de academia com criação de treinos personalizados, desenvolvido para fins de estudo com HTML, CSS e JavaScript puro.
 </p>
 
