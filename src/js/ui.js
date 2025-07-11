@@ -194,23 +194,3 @@ export function configurarUIParaUsuarioDeslogado(user){
     }
     console.log("Usuário deslogado:", user);
 }
-
-export function criarItemTreinoPersonalizado(){
-    const containerTreino = document.querySelector(".container__treino");
-    if (!containerTreino) {
-        console.error("Container de treino não encontrado.");
-        return;
-    }
-    const itemTreino = document.createElement("div");
-    itemTreino.className = "item__treino";
-    itemTreino.innerText = "+";
-    const btnFechar = document.createElement("button");
-    btnFechar.className = "btn__fechar";
-    btnFechar.innerText = "X";
-    btnFechar.addEventListener("click", () => {
-        itemTreino.remove();
-    })
-    itemTreino.appendChild(btnFechar);
-
-    containerTreino.appendChild(itemTreino);
-}

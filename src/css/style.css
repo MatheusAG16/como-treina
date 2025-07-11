@@ -199,26 +199,9 @@ h2 {
     max-width: 300px;
     aspect-ratio: 2 / 3;
     background-color: #000;
-    position: relative;
-    display: inline-block;
     transition: all 0.3s ease-in-out;
     border-radius: 20px;
-}
-
-.div__exercicio {
-    transform: scale(1.05);
-}
-
-/*Animação para os componentes aparecer na tela*/
-.fade-in {
-    opacity: 0;
-    transform: translateX(50px);
-    transition: opacity .8s linear, transform .8s ease-in-out;
-}
-
-.fade-in.active {
-    opacity: 1;
-    transform: translateX(0);
+    overflow: hidden;
 }
 
 .img__exercicio {
@@ -227,6 +210,11 @@ h2 {
     cursor: pointer;
     object-fit: cover;
     border-radius: 10px;
+    transition: all .6s ease;
+}
+
+.img__exercicio:hover {
+    transform: scale(1.2);
 }
 
 .btn__exercicio {
@@ -247,6 +235,20 @@ h2 {
     background: rgba(0, 0, 0, 0.9);
 } 
 
+/*Animação para os componentes aparecer na tela*/
+.fade-in {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity .8s linear, transform .8s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
 /*Estilo da parte Crie seu Treino*/
 section.main__criaTreino {
     display: flex;
@@ -256,6 +258,7 @@ section.main__criaTreino {
     min-height: 100dvh;
     width: calc(100vw - 15px);
     background-color: #000;
+    color: #f8f8f8;
 }
 
 .main__criaTreino h2 {

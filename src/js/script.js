@@ -2,7 +2,6 @@ import { register, login, logout } from './auth.js';
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 import { auth } from './firebaseConfig.js';
 import { configurarUIParaUsuarioLogado, configurarUIParaUsuarioDeslogado } from './ui.js';
-import { criarItemTreinoPersonalizado } from './ui.js';
 import { fadeIn } from './ui.js';
 
 // Função para exibir o conteúdo com efeito de fade-in
@@ -61,28 +60,3 @@ onAuthStateChanged(auth, (user) => {
     configurarUIParaUsuarioDeslogado(user);
   }
 });
-
-// Configuração dos botões de Criar Treino e Meus Treinos
-const btnCriarTreino = document.querySelector("#btn-criar-treino");
-if (btnCriarTreino) {
-    btnCriarTreino.addEventListener("click", () => {
-        console.log("Botão Criar Treino clicado");
-        criarItemTreinoPersonalizado();
-    })
-}
-
-const btnMeusTreinos = document.querySelector("#btn-meus-treinos");
-if (btnMeusTreinos) {
-    btnMeusTreinos.addEventListener("click", () => {
-        console.log("Botão Meus Treinos clicado");
-    });
-}
-
-const containerTreino = document.querySelector(".container__treino");
-if (containerTreino) {
-    containerTreino.addEventListener("click", (event) => {
-        console.log("Container de treino clicado");
-        console.log(event);
-        console.log(event.target);
-    })
-}

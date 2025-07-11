@@ -40,7 +40,7 @@ async function renderizarTela() {
     // Se não houver dados no LocalStorage, ele adiciona um texto no item citando que não existe treino
     if(treinosSalvosNoLocalArray.length === 0){
         const itemTreino = document.createElement('li')
-        itemTreino.textContent = 'Não foi criado nenhum Treino Personalizado, crie um!'
+        itemTreino.innerHTML = 'Não foi criado nenhum Treino Personalizado, <a href="exercicios.html">crie um!<a/>'
         containerTreino.appendChild(itemTreino)
     }
 

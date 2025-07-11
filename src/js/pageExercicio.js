@@ -1,7 +1,21 @@
 import {createCardExercise, createListExercise} from './ui.js';
 import {fetchExercicio} from'./api.js';
 
-// // Cria o Array que vai receber os ids dos exercicios para salvar o treino do usuário
+// Criando o ouvinte do DOM para passar as Querys Strings da pagina principal para o select dos exercicios, selecionando pela categoria
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const grupoSelecionado = urlParams.get('grupo');
+
+    if (grupoSelecionado) {
+        const selectElement = document.querySelector('#muscle-group');
+        
+        selectElement.value = grupoSelecionado;
+    }
+})
+
+
+// Cria o Array que vai receber os ids dos exercicios para salvar o treino do usuário
 let treinoDoUsuarioIds = [];
 
 // Ouvinte do evento de clique no botão para buscar os exercícios
