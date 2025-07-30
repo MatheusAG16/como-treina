@@ -72,9 +72,11 @@ async function renderizarTela() {
 }
 
 async function excluirTreino(nomeTreino){
+    // Pega os dados no localStorage e converte para JSON
     const meusTreinosSalvos = localStorage.getItem('meusTreinosSalvos');
     const meusTreinosSalvosArray = JSON.parse(meusTreinosSalvos)
 
+    // Itera sobre o array de dados e remove do localStorage aquele selecionado, após disso renderiza a tela.
     meusTreinosSalvosArray.forEach((treino, index) => {
         if(treino.nome === nomeTreino){
             meusTreinosSalvosArray.splice(index, 1)
@@ -104,6 +106,7 @@ async function mostrarTreino(nomeTreino) {
 
     const exerciciosDoTreino = todosOsExercicios.filter(exercicio => idsDosTreinosEscolhidos.includes(exercicio.id))
     
+    // Itera sobre os dados e cria o card para ser renderizado na tela
     exerciciosDoTreino.forEach((treino) => {
         containerTreino.appendChild(createCardExercise(treino))
     })
